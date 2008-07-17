@@ -28,6 +28,10 @@ import { ImagesComponent } from './components/project/images/images.component';
 
 import { ImageListComponent } from './components/project/images/image-list/image-list.component';
 import { ImageComponent } from './components/project/images/image/image.component';
+import { VzlaComponent } from './components/vzla/vzla.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CanAdminGuard } from '../auth/guards/can-admin.guard';
 
 @NgModule({
 
@@ -49,6 +53,9 @@ UploaderComponent,
 ImagesComponent,
 ImageComponent,
 ImageListComponent,
+VzlaComponent,
+LoginComponent,
+RegisterComponent
 
 
 
@@ -66,15 +73,17 @@ ReactiveFormsModule,
 AngularFireModule,
 AngularFireDatabaseModule,
 RouterModule.forChild([
-    { path:  'escritorio', component: ProjectComponent, children :[
-    { path: 'new/project', component:FormuProyectComponent,  },
-    { path: 'project/:id', component: FormuProyectComponent,  },
-    { path: 'new/image', component: ImageproyComponent,  },
-    { path: 'new/images', component: UploaderComponent,  },
-    { path: 'new/imagenes', component: ImageComponent,  },
-    
+    { path:  'escritorio', component: ProjectComponent, canActivate: [CanAdminGuard], children : [
+    { path: 'new/project', component:FormuProyectComponent, canActivate: [CanAdminGuard],  },
+    { path: 'project/:id', component: FormuProyectComponent, canActivate: [CanAdminGuard],  },
+    { path: 'new/image', component: ImageproyComponent, canActivate: [CanAdminGuard],  },
+    { path: 'new/images', component: UploaderComponent, canActivate: [CanAdminGuard],  },
+    { path: 'new/imagenes', component: ImageComponent, canActivate: [CanAdminGuard], },
+
 ]
-  }
+  },
+
+
 
   ])
 

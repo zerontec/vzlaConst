@@ -5,7 +5,7 @@
             <div class="col-md-12"> 
                 <div class="title-box">
                     <div class="page-title-heading">
-                        <h1 class="title">Escriorio</h1>
+                        <h1 class="title">Escritorio</h1>
                     </div><!-- /.page-title-captions -->
                     <div class="breadcrumb-wrapper">
                         <span>
@@ -73,14 +73,17 @@
                             <li>
                                 <i class="flaticon flaticon-crane"></i>
                                 <h5>
-                                    <a >texti</a>
+                                    <a [routerLink]="['new/images']" routerLinkActive="router-link-active">Imagenes a Galeria</a> 
                                 </h5>
                                 <p></p>
                             </li>
                             <li>
                                 <i class="flaticon flaticon-process"></i>
                                 <h5>
-                                    <a >texti</a>
+                                    <li  > 
+                                        <a class="dropdown-item" (click)="onLogout()" [routerLink]="['/home']">Salir</a>
+                                    </li>
+                             
                                 </h5>
                                 <p></p>
                             </li>

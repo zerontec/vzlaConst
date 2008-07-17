@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import {AdminModule} from './admin/admin.module';
+import {AuthModule} from './auth/auth.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { RouterModule } from '@angular/router';
@@ -35,6 +36,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 
 
 
@@ -50,6 +53,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
     VgOverlayPlayModule,
     VgBufferingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
@@ -57,12 +62,13 @@ import { AngularFirestore } from '@angular/fire/firestore';
     SharedModule,
     CoreModule,
     AdminModule,
+    AuthModule,
     TranslocoRootModule,
      APP_ROUTES,
     SUB_RUTAS,
     NgxSpinnerModule,
     HttpClientModule,
-   
+
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -99,9 +99,26 @@
                                             </li>
                                             <li><a [routerLink]="['contact']" 
                                                 routerLinkActive="router-link-active">{{ 'Contact' | transloco }}</a></li>
-                      
-                                            
-                                              <li><a ><i class="fa fa-globe"> </i> </a>
+                                                <ng-template #notLoggedInUser>
+                                                    <li class="list-inline-item" [routerLink]="['login']">
+                                                       <a   class="btn btn-link"><i class="mdi mdi-account-circle"></i> Login/Sign Up</a>
+                                                    </li>
+                                                  </ng-template>
+                                                <ng-container *ngIf="appUser.isAdmin">
+                                                <li><a [routerLink]="['escritorio']" 
+                                                    routerLinkActive="router-link-active">Escritorio</a></li>
+                                                </ng-container>
+
+                                                <!-- <li *ngIf="appUser; else notLoggedInUser" >
+                                                   
+                                                       <img src="{{appUser.foto}}" class="rounded-circle" > <strong style="color: white;">Hola {{appUser.email || appUser.name}} </strong> 
+                                                    
+                                                </li> -->
+                                              
+                                                   
+                                
+                                              
+                                                    <li><a ><i class="fa fa-globe"> </i> </a>
                                                 <ul>
                                                     <select 
                                                     [ngModel]="selectLang"
@@ -116,9 +133,12 @@
                                                 </select>
                                                     
                                                 </ul>
+                                               
                                             </li>
                                             
                                         </ul>
+
+                                        
                                     </nav><!-- nav end-->
                                 </div><!-- site-navigation end-->
                             </div>

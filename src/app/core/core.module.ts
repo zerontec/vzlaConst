@@ -24,8 +24,9 @@ import { ServPreviewComponent } from './components/services/serv-preview/serv-pr
 import { ServProposalComponent } from './components/services/serv-proposal/serv-proposal.component';
 import { MoreServicesComponent } from './components/more-services/more-services.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+// For MDB Angular Free
+import {  CarouselModule, ModalModule, WavesModule } from 'angular-bootstrap-md';
 import { GalleryComponent } from './components/gallery/gallery.component';
-
 
 
 @NgModule({
@@ -55,6 +56,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     VgBufferingModule,
     BrowserAnimationsModule,
     TranslocoRootModule,
+    CarouselModule, 
+    ModalModule, 
+    WavesModule,
     SUB_RUTAS,
 
   ],

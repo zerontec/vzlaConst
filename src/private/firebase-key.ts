@@ -8,5 +8,3 @@ export const fireBaseKey = {
     appId: '1:974872734716:web:41eacce9dda69c449b2079',
     measurementId: 'G-ZHRBL6GXL2'
   };
-  
-  

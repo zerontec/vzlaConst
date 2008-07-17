@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-
+import {User} from '../../models/user.interface';
+import { Observable } from 'rxjs';
+import {AuthService} from '../../../auth/service/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -8,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
   private image: any;
-  constructor( ) { }
+  constructor(private  authS: AuthService, private routers: Router ) { }
 
   ngOnInit() {
   }
@@ -16,7 +19,14 @@ export class ProjectComponent implements OnInit {
 
 
 
-
+  async onLogout() {
+    try {
+      await this.authS.logout();
+      this.router.navigate(['/login']);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 
 }
