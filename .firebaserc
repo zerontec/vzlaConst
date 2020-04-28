@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "venezuela-1a3a4": {
+      "hosting": {
+        "mdb-angular-free": [
+          "venezuela-1a3a4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "venezuela-1a3a4"
+  }
+}
