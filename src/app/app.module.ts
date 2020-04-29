@@ -14,6 +14,16 @@ import { APP_ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+ 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,7 +36,14 @@ import { environment } from 'src/environments/environment';
     FormsModule,
     SharedModule,
     CoreModule,
-    APP_ROUTES
+    APP_ROUTES,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+     }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
