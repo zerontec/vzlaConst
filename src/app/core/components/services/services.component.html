@@ -5,14 +5,14 @@
             <div class="col-md-12"> 
                 <div class="title-box">
                     <div class="page-title-heading">
-                        <h1 class="title">House Planning</h1>
+                        <h1 class="title">Services</h1>
                     </div><!-- /.page-title-captions -->
                     <div class="breadcrumb-wrapper">
                         <span>
                             <a title="Homepage" href="index.html"><i class="ti ti-home"></i> Home</a>
                         </span>
                         <span class="cmt-bread-sep"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-                        <span><span>House Planning</span></span>
+                        <span><span>Services</span></span>
                     </div>
                 </div>
             </div><!-- /.col-md-12 -->  
@@ -36,9 +36,9 @@
                         </div>
                     </div>
                     <div class="cmt-service-description">
-                        <h4 class="mb-10">House Planning</h4>
+                        <h4 class="mb-10">Get to know our range of services</h4>
                         <div class="mb-30">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolore.</p>
+                            <p>We offer a series of services at your disposal, browse through the menu and get to know them.</p>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
@@ -113,6 +113,8 @@
                                     </div><!--featured-icon-box-->
                                 </div>
                             </div>
+
+                            <router-outlet></router-outlet>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
@@ -164,19 +166,19 @@
                     </form>
                 </aside>
                 <aside class="widget widget-nav-menu">
-                    <h3 class="widget-title">Other Services</h3>
+                    <h3 class="widget-title">Our Services</h3>
                     <ul class="widget-menu">
                         <li>
                             <i class="flaticon flaticon-skyline"></i>
                             <h5>
-                                <a href="#">Apartment Design</a>
+                                <a [routerLink]="[ '/basement-remodeling' ]" routerLinkActive="active">Basement-Remodeling'</a>
                             </h5>
                             <p>Ne vim denique vituperata.</p>
                         </li>
                         <li class="active">
                             <i class="flaticon flaticon-sketch"></i>
                             <h5>
-                                <a href="#">House Planning</a>
+                                <a [routerLink]="[ '/Carpentry' ]" routerLinkActive="active">House Planning</a>
                             </h5>
                             <p>Ne vim denique vituperata.</p>
                         </li>
@@ -210,6 +212,8 @@
                         </li>
                     </ul>
                 </aside>
+
+               
                 <aside class="widget widget-link">
                     <h3 class="widget-title">Follow Us</h3>
                     <div class="cmt-social-links-wrapper list-inline">
@@ -225,6 +229,7 @@
                         </ul>
                     </div>
                 </aside>
+
                 <aside class="widget widget_media_image">
                     <div class="banner-img-box cmt-textcolor-white">
                         <div class="featured-content featured-content-banner">

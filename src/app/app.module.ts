@@ -13,10 +13,18 @@ import { CoreModule } from './core/core.module';
 import { APP_ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { environment } from 'src/environments/environment';
+//video Angular
+
+import {VgCoreModule} from 'videogular2/compiled/core';
+import {VgControlsModule} from 'videogular2/compiled/controls';
+import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
+import {VgBufferingModule} from 'videogular2/compiled/buffering';
+//import {SingleMediaPlayer} from './single-media-player';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SUB_RUTAS } from './sub.rutas';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,6 +37,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent
   ],
   imports: [
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
     AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
     BrowserAnimationsModule,
@@ -37,6 +49,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     CoreModule,
     APP_ROUTES,
+    SUB_RUTAS,
+
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
