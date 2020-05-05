@@ -18,6 +18,18 @@
                                                     Oley, Pennsylvania</span></li>
                                                 <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">info@venezuelaconstructionllc</a></li>
                                                 <li><i class="fa fa-phone"></i>+1 610-390-6878</li>
+                                            <li>     <span class="form-inline">
+                                                <select 
+                                                    class="form-control" 
+                                                    #selectedLang 
+                                                    (change)="switchLang(selectedLang.value)">
+                                                  <option *ngFor="let language of translate.getLangs()" 
+                                                    [value]="language"
+                                                    [selected]="language === translate.currentLang">
+                                                    {{ language }}
+                                                  </option>
+                                                </select>
+                                              </span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -35,12 +47,9 @@
                                         <ul class="social-icons square">
                                             <li><a href="#"><i class="ti ti-facebook"></i></a>
                                             </li>
-                                            <li><a href="#"><i class="ti ti-twitter"></i></a>
+                                            <li><a href="#"><i class="ti ti-instagram"></i></a>
                                             </li>
-                                            <li><a href="#"><i class="ti ti-google"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="ti ti-linkedin"></i></a>
-                                            </li>
+                                            
                                         </ul>
                                     </div><!-- social-links-wrapper -->
                                     <!-- header-icons -->
@@ -74,27 +83,32 @@
                                     <!-- nav -->
                                     <nav id="menu" class="menu">
                                         <ul class="dropdown">
-                                           <li class="active"><a [routerLink]="[ '/home' ]">Home</a>
+                                           <li class="active"><a [routerLink]="[ '/home' ]"> {{'Home' | translate }}</a>
                                                 
                                             </li>
                                         
-                                           <li><a [routerLink]="['services']" routerLinkActive="router-link-active">Services </a>
+                                           <li><a >Services </a>
                                                 <ul>
-                                                    <li><a href="#">Apartment Design</a></li>
-                                                    <li><a href="#">House Planning</a></li>
-                                                    <li><a href="#">Repair Welding</a></li>
-                                                    <li><a href="#">Expert Mechanical</a></li>
-                                                    <li><a href="#">Management</a></li>
-                                                    <li><a href="#">General Contracting</a></li>
+                                                    
+                                                    <li><a [routerLink]="['services/Carpentry']">Carpentry</a></li>
+                                                    <li><a [routerLink]="['services/Basement-Remodeling']">Basement-Remodeling</a></li>
+                                                    <li><a [routerLink]="['services/Kitchen-Remodeling']">Kitchen-Remodeling</a></li>
+                                                    <li><a [routerLink]="['services/Remodeling-Project']">Remodeling-Project</a></li>
+                                                    <li><a [routerLink]="['services/Construction-Permits']">Construction-Permits</a></li>
+                                                    <li><a [routerLink]="['services/Project-Preview']">Project-Preview</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a [routerLink]="['/projects']" routerLinkActive="router-link-active" >Projects</a>
+                                            <li><a [routerLink]="['projects']" routerLinkActive="router-link-active" >Projects</a>
                                               
                                             </li>
-                                            <li><a [routerLink]="[ '/about' ]">About</a>
+                                            <li><a [routerLink]="[ 'about' ]">About</a>
                                                 
                                             </li>
-                                            <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
+                                            <li><a [routerLink]="['contact']" routerLinkActive="router-link-active">Contact</a></li>
+                      
+
+
+                                            
                                         </ul>
                                     </nav><!-- nav end-->
                                 </div><!-- site-navigation end-->

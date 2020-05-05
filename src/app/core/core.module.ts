@@ -17,16 +17,11 @@ import { ServCarpComponent } from './components/services/serv-carp/serv-carp.com
 import { ServBasamentComponent } from './components/services/serv-basament/serv-basament.component';
 import { ServKitchenComponent } from './components/services/serv-kitchen/serv-kitchen.component';
 import { SUB_RUTAS } from '../sub.rutas';
+import { ServRemodelingComponent } from './components/services/serv-remodeling/serv-remodeling.component';
+import { ServCpermitsComponent } from './components/services/serv-cpermits/serv-cpermits.component';
+import { ServPreviewComponent } from './components/services/serv-preview/serv-preview.component';
 
-/* const routes: Routes = [
-  {path: 'services', component:  ServicesComponent,
-  children:[
-    {path: 'Basement-Remodeling', component: ServBasamentComponent},
-    {path: 'Carpentry', component: ServCarpComponent},
-    {path: 'Kitchen-Remodeling', component: ServKitchenComponent},
-    ]
-},];
- */
+
 
 @NgModule({
   declarations: [
@@ -37,7 +32,10 @@ import { SUB_RUTAS } from '../sub.rutas';
      ContactComponent,
      ServCarpComponent,
      ServBasamentComponent,
-     ServKitchenComponent],
+     ServKitchenComponent,
+      ServRemodelingComponent,
+      ServCpermitsComponent,
+    ServPreviewComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -46,9 +44,8 @@ import { SUB_RUTAS } from '../sub.rutas';
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    SUB_RUTAS
+    SUB_RUTAS,
 
-    // RouterModule.forChild(routes)
   ],
 
 

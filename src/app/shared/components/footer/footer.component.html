@@ -59,17 +59,17 @@
                     <div class="widget widget_nav_menu clearfix">
                        <h3 class="widget-title">Useful Links</h3>
                         <ul id="menu-footer-services">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a [routerLink]="['/']">Home</a></li>
+                            <li><a  [routerLink]="['services/Carpentry']">Services</a></li>
+                            <li><a  [routerLink]="['projects']">Projects</a></li>
                             
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a  [routerLink]="['about']">About</a></li>
+                            <li><a  [routerLink]="['contact']">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
                            
                             
                             <li><a href="#">Locations</a></li>
-                            <li><a href="#">Map</a></li>
+                            <li><a href="#">jobs</a></li>
                             
                         </ul>
                     </div>
@@ -103,9 +103,8 @@
                    <div class="social-icons">
                         <ul class="list-inline">
                             <li><a href="#"><i class="ti ti-facebook"  aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti ti-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti ti-google" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="ti ti-instagram" aria-hidden="true"></i></a></li>
+                            
                         </ul>
                     </div>
                 </div>
