@@ -9,32 +9,28 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslatePipe } from './pipes/translate.pipe';
-/* // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-} */
- 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PopOverComponent } from './animations/pop-over/pop-over.component';
+import { TranslocoRootModule } from '../transloco-root.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [FooterComponent,
     HeaderComponent,
     TranslatePipe,
+    PopOverComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
+    BrowserAnimationsModule,
+    TranslocoRootModule,
+    FormsModule,
     SUB_RUTAS,
     APP_ROUTES,
 
 
     HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
-        deps: [HttpClient]
-      }
-    })
 
   ],
 
@@ -46,6 +42,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   ]
 })
 export class SharedModule { }
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
+

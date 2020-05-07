@@ -18,18 +18,7 @@
                                                     Oley, Pennsylvania</span></li>
                                                 <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">info@venezuelaconstructionllc</a></li>
                                                 <li><i class="fa fa-phone"></i>+1 610-390-6878</li>
-                                            <li>     <span class="form-inline">
-                                                <select 
-                                                    class="form-control" 
-                                                    #selectedLang 
-                                                    (change)="switchLang(selectedLang.value)">
-                                                  <option *ngFor="let language of translate.getLangs()" 
-                                                    [value]="language"
-                                                    [selected]="language === translate.currentLang">
-                                                    {{ language }}
-                                                  </option>
-                                                </select>
-                                              </span></li>
+                                            
                                             </ul>
                                         </div>
                                     </div>
@@ -83,31 +72,47 @@
                                     <!-- nav -->
                                     <nav id="menu" class="menu">
                                         <ul class="dropdown">
-                                           <li class="active"><a [routerLink]="[ '/home' ]"> {{'Home' | translate }}</a>
+                                           <li class="active"><a [routerLink]="[ '/home' ]"> {{'Home' | transloco }}</a>
                                                 
                                             </li>
                                         
-                                           <li><a >Services </a>
+                                           <li><a >{{ 'Services' | transloco }} </a>
                                                 <ul>
                                                     
-                                                    <li><a [routerLink]="['services/Carpentry']">Carpentry</a></li>
-                                                    <li><a [routerLink]="['services/Basement-Remodeling']">Basement-Remodeling</a></li>
-                                                    <li><a [routerLink]="['services/Kitchen-Remodeling']">Kitchen-Remodeling</a></li>
-                                                    <li><a [routerLink]="['services/Remodeling-Project']">Remodeling-Project</a></li>
-                                                    <li><a [routerLink]="['services/Construction-Permits']">Construction-Permits</a></li>
-                                                    <li><a [routerLink]="['services/Project-Preview']">Project-Preview</a></li>
+                                                    <li><a [routerLink]="['services/Carpentry']">{{ 'Carpentry' | transloco }} </a></li>
+                                                    <li><a [routerLink]="['services/Basement-Remodeling']">{{ 'Basement-Remodeling' | transloco }} </a></li>
+                                                    <li><a [routerLink]="['services/Kitchen-Remodeling']">{{ 'Kitchen-Remodeling' | transloco }}</a></li>
+                                                    <li><a [routerLink]="['services/Remodeling-Project']">{{ 'Remodeling-Project' | transloco }}</a></li>
+                                                    <li><a [routerLink]="['services/Construction-Permits']">{{ 'Construction-Permits' | transloco }}</a></li>
+                                                    <li><a [routerLink]="['services/Project-Preview']">{{ 'Project-Preview' | transloco }}</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a [routerLink]="['projects']" routerLinkActive="router-link-active" >Projects</a>
+                                            <li><a [routerLink]="['projects']" routerLinkActive="router-link-active" >{{ 'Projects' | transloco }}</a>
                                               
                                             </li>
-                                            <li><a [routerLink]="[ 'about' ]">About</a>
+                                            <li><a [routerLink]="[ 'about' ]">{{ 'About' | transloco }}</a>
                                                 
                                             </li>
-                                            <li><a [routerLink]="['contact']" routerLinkActive="router-link-active">Contact</a></li>
+                                            <li><a [routerLink]="['contact']" 
+                                                routerLinkActive="router-link-active">{{ 'Contact' | transloco }}</a></li>
                       
-
-
+                                            
+                                              <li><a >Idioma </a>
+                                                <ul>
+                                                    <select 
+                                                    [ngModel]="selectedLang"
+                                                    (ngModelChange)="selectLanguage($event)">
+                                                    <option value="es">
+                                                        {{ 'Español.es' | transloco }}
+                                                    </option>
+                                                    <option value="en">
+                                                        {{ 'English.en' | transloco }}
+                                                    </option>
+                                                   
+                                                </select>
+                                                    
+                                                </ul>
+                                            </li>
                                             
                                         </ul>
                                     </nav><!-- nav end-->

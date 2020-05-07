@@ -10,15 +10,15 @@ export class AppComponent {
   title = 'mdb-angular-free';
 
 
-constructor( private traslate: TranslateService){
+constructor( ){
 
-traslate.setDefaultLang('en');
+/* traslate.setDefaultLang('en');
 traslate.use('en');
 
 }
 setLanguage(language: string){
 this.traslate.use(language);
-
+ */
 }
 
 

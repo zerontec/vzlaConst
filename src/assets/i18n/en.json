@@ -1,14 +1,18 @@
 {
-
     "Title": "Venezuela Construction llc",
     "Home": "Home",
     "Services": "Services",
     "Projects": "projects",
     "Contact": "Contact",
     "About": "About",
-   
+    "Carpentrym": "Carpentrym",
+    "Basement-Remodeling": "Basement-Remodelings",
+    "Kitchen-Remodeling":"Kitchen-Remodeling",
+    "Remodeling-Project":"Remodeling-Project",
+    "Construction-Permits": "Construction-Permits",
+    "Project-Preview":"Project-Preview",
 
-    //Slider
+
     "Carpentry":"Carpentry",
     "Remodeling": "Remodeling ",
     "Bathroom":"Bathroom",

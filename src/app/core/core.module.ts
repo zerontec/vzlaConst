@@ -8,11 +8,12 @@ import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RouterModule, Routes, ActivatedRoute } from '@angular/router';
-
-import {VgCoreModule} from 'videogular2/compiled/core';
-import {VgControlsModule} from 'videogular2/compiled/controls';
-import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
-import {VgBufferingModule} from 'videogular2/compiled/buffering';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslocoRootModule } from '../transloco-root.module';
+import { VgCoreModule } from 'videogular2/compiled/core';
+import { VgControlsModule } from 'videogular2/compiled/controls';
+import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
+import { VgBufferingModule } from 'videogular2/compiled/buffering';
 import { ServCarpComponent } from './components/services/serv-carp/serv-carp.component';
 import { ServBasamentComponent } from './components/services/serv-basament/serv-basament.component';
 import { ServKitchenComponent } from './components/services/serv-kitchen/serv-kitchen.component';
@@ -20,6 +21,7 @@ import { SUB_RUTAS } from '../sub.rutas';
 import { ServRemodelingComponent } from './components/services/serv-remodeling/serv-remodeling.component';
 import { ServCpermitsComponent } from './components/services/serv-cpermits/serv-cpermits.component';
 import { ServPreviewComponent } from './components/services/serv-preview/serv-preview.component';
+import { ServProposalComponent } from './components/services/serv-proposal/serv-proposal.component';
 
 
 
@@ -28,14 +30,15 @@ import { ServPreviewComponent } from './components/services/serv-preview/serv-pr
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-     ProjectsComponent,
-     ContactComponent,
-     ServCarpComponent,
-     ServBasamentComponent,
-     ServKitchenComponent,
-      ServRemodelingComponent,
-      ServCpermitsComponent,
-    ServPreviewComponent],
+    ProjectsComponent,
+    ContactComponent,
+    ServCarpComponent,
+    ServBasamentComponent,
+    ServKitchenComponent,
+    ServRemodelingComponent,
+    ServCpermitsComponent,
+    ServPreviewComponent,
+    ServProposalComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -44,11 +47,13 @@ import { ServPreviewComponent } from './components/services/serv-preview/serv-pr
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
+    BrowserAnimationsModule,
+    TranslocoRootModule,
     SUB_RUTAS,
 
   ],
 
 
-  exports:[RouterModule],
+  exports: [RouterModule],
 })
 export class CoreModule { }

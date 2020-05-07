@@ -3,16 +3,22 @@
     "Title": "Venezuela Construction llc",
     "Home": "Inicio",
     "Services": "Servicios",
-    "Projects": "proyectos",
+    "Projects": "Proyectos",
     "Contact": "Contactanos",
     "About": "Acerca",
-    
+    "Carpentrym": "Carpinteria",
+    "Basement-Remodeling": "Remodelacion de Sotanos",
+    "Kitchen-Remodeling":"Remodelacion de Cocinas",
+    "Remodeling-Project":"Proyectos de Remodelacion",
+    "Construction-Permits": "Permisos de Construccion",
+    "Project-Preview":"Previsualizacion de Proyectos",
 
-    //SLIDER
+
+
     "Carpentry":"Carpinteria",
     "Remodeling": "Remodelacion en",
     "Bathroom":"Baños",
-    "Remodelinb": "Remodelacion de",
+    "Remodelinb": "Remodelacion de"
     
 
 

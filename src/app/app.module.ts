@@ -11,15 +11,18 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
+
 import { RouterModule } from '@angular/router';
 import { environment } from 'src/environments/environment';
-//video Angular
+
 
 import {VgCoreModule} from 'videogular2/compiled/core';
 import {VgControlsModule} from 'videogular2/compiled/controls';
 import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
 import {VgBufferingModule} from 'videogular2/compiled/buffering';
-//import {SingleMediaPlayer} from './single-media-player';
+import { TranslocoRootModule } from './transloco-root.module';
+
+
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -29,16 +32,9 @@ import { APP_ROUTES } from './app.routes';
 import { SUB_RUTAS } from './sub.rutas';
 
 
-// // AoT requires an exported function for factories
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http);
-// }
 
-/* to load and set en.json as the default application language */
-/* export function setupTranslateFactory(service: TranslateService): Function {
-	return () => service.use('en');
-} */
- 
+
+
 
 @NgModule({
   declarations: [
@@ -56,16 +52,11 @@ import { SUB_RUTAS } from './sub.rutas';
     FormsModule,
     SharedModule,
     CoreModule,
+    TranslocoRootModule,
+    BrowserAnimationsModule,
      APP_ROUTES,
     SUB_RUTAS,
     HttpClientModule,
-     TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
-        deps: [HttpClient]
-      }
-    })
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -73,7 +64,3 @@ import { SUB_RUTAS } from './sub.rutas';
 
 
 export class AppModule { }
-// AOT compilation support
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}

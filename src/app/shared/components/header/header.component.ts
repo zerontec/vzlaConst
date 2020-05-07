@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // { TranslateService } from '../../services/translate.service';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-header',
@@ -9,22 +10,20 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private translate: TranslateService) {
-    translate.addLangs(['en', 'es']);
-    translate.setDefaultLang('en');
+  title = 'angular-i18n-transloco';
+  selectLang = 'en';
 
-   }
+  constructor(private translocoService: TranslocoService) {
+    this.selectLanguage();
+  }
 
   ngOnInit() {
   }
-  switchLang(lang: string) {
-    this.translate.use(lang);
+  selectLanguage(language: string = this.selectLang) {
+    this.translocoService.setActiveLang( language );
+  }
   }
 
-/* 
-setLang(lang: string) {
-    // console.log("Language", lang);
-    this.translate.use(lang).then(() => {});
-  } */
 
-}
+
+
