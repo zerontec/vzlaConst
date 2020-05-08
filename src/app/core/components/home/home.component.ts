@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '../../../shared/services/translate.service';
+
 import { TranslocoService } from '@ngneat/transloco';
 @Component({
   selector: 'app-home',
