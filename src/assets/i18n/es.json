@@ -12,8 +12,7 @@
     "Remodeling-Project":"Proyectos de Remodelacion",
     "Construction-Permits": "Permisos de Construcción",
     "Project-Preview":"Previsualizacion de Proyectos",
-
-
+    
 
     "Carpentry":"Carpinteria",
     "Remodeling": "Remodelacion en",
@@ -60,11 +59,52 @@
     "Oursn": " Nuestras Redes Sociales",
     "Phone": "Telefonos",
     "Email": "Correo Electronico",
-    "Contactext": "Contactanos escribe con gusto te atenderemos"
+    "Contactext": "Contactanos escribe con gusto te atenderemos",
 
+    "OurServices":"Nuestros Servicios",
+    "Carpentrym-Remodeling":"Remodelación en Carpinteria",
+    "Carpentrytexts": "Realizamos hermosos trabajos de carpintería, acabados de primera clase. utilizando materiales de calidad",
 
+    "OurProcess": "Nuestros Procesos",
+    "WhatYouReceive": "Que Recibes",
+    "WhatText":"Hacemos todo nuestro trabajo con la máxima dedicación para su satisfacción.",
+    "RecA":"Contratista Certificado",
+    "RecB":"Miembros del equipo dedicados",
+    "RecC":"Cualidades de buen ladrillo",
+    "RecD": "Cementos de Calidad",
+    "RecE": "Gravedad Específica del Suelo",
+    "RecF": "Prueba del Suelo",
+    "TextBasement":"¿Tiene su casa un sótano que está infrautilizado o que no se utiliza en absoluto? Si es así, es posible que se esté perdiendo agregar pies cuadrados de comodidad a su hogar, lo que se puede lograr con el reciclaje del sótano",
+    "TextKitchen": "La remodelación de la cocina se considera una muy buena opción si desea darle un toque diferente a su hogar. La cocina es uno de los lugares más importantes de nuestro hogar, y es el espacio donde muchas personas pasan gran parte de su tiempo Con Venezuela Construction puede tener la cocina de sus sueños en contacto con nosotros.",
+    "Follow": "Siguenos",
 
+    "AboutP":"Aceca de Nosotros",
+    "TitleAbout":"Experimente una mejor manera de construir.",
+    "textAbout":"Contamos con equipos de última generación. para realizar trabajos de calidad. Atención personalizada, personal altamente calificado.",
+    "Mission": "Nuestra Misión",
+    "TextMission":"Nuestra misión nos convierte en su primera opción cuando buscamos una empresa responsable que garantice un trabajo de calidad con profesionalismo y una respuesta oportuna a sus necesidades.",
+    "Vission":"¿Cuál es nuestra visión?",
+    "TextVision": "Tenemos la visión de crecer, expandirnos y llegar a muchos rincones de nuestro país. realizando y garantizando la satisfacción de todos nuestros clientes.",
     
+    "Visit":"Visita nuestra Instalaciones",
+  "  Map": "Ubicanos en el mapa",
+  "NumberEn":"Numeros de Atención en Ingles",
+  "GetQuit":"Obtenga contacto rápido con nosotros",
+  "NumberEs":"Numeros para Atencion en Español",
+
+  "Comodidad":"Para tu Comodidad",
+  "HowCan": "¿Como podemos ayudarte?",
+  "Free":"Consulta Gratis",
+  "GetAFree":"Obtenga una cuota gratis",
+  "FullName": "Nombre Completo",
+  "EmailA": " Direccion de Correo",
+  "PhoneNumber":" Numero Telefonico",
+  "ZipCode":"Codigo Postal",
+  "Message":"Mensaje"
+
+
+  
+
 
 
 

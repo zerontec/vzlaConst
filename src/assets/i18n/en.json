@@ -11,7 +11,7 @@
     "Remodeling-Project":"Remodeling-Project",
     "Construction-Permits": "Construction-Permits",
     "Project-Preview":"Project-Preview",
-
+    
 
     "Carpentry":"Carpentry",
     "Remodeling": "Remodeling ",
@@ -56,13 +56,48 @@
     "Oursn": " Our social networks",
     "phone": "Phone",
     "Email": "Email",
-    "Contactext": "Contact us write with pleasure we will assist you."
+    "Contactext": "Contact us write with pleasure we will assist you.",
+    "OurServices":"Our Services",
+    "Carpentrym-Remodeling":"Carpentry Remodeling",
+    "Carpentrytexts": "We carry out beautiful carpentry work, first class finishes. using quality materials",
+    "OurProcess": "Our Process",
+    "WhatYouReceive": "What You Receive?",
+    "WhatText":"We do all our work with the utmost dedication for your satisfaction.",
+    "RecA":"Certified Contractor",
+    "RecB":"Dedicated Team Members",
+    "RecC":"Qualities Of Good Brick",
+    "RecD": "Qualities Of Cement",
+    "RecE": "Specific Gravity Of Soil",
+    "RecF": "Soil Testing",
+    "TextBasement":"Does your home have a basement that is underused or not used at all? If so, you may be missing out on adding square footage of comfort to your home which can be accomplished with basement recycling.",
+    "TextKitchen": "Kitchen remodeling is considered a very good option if you want to give a different touch to your home. The kitchen is one of the most important places in our home, and it is the space where many people spend much of their time. With Venezuela Construction you can have the dream kitchen contact us.",
+    "Follow": "Follow Us",
+    
+    "AboutP":"About Us",
+    "TitleAbout":"Experience A Better Way To Build.",
+    "textAbout":"We have the latest generation equipment. to perform quality work. Personalized attention, highly qualified staff.",
+    "Mission": "Meet With Our Mission",
+    "TextMission":"Our mission make us your first option when looking for a responsible company that guarantees quality work with professionalism and a timely response to your needs",
+    "Vission":"What Is Our Vision?",
+    "TextVision": "We have the vision to grow, expand and reach many corners of our country. carrying out and guaranteeing the satisfaction of all our clients.",
+    
+    "Visit":"Visit Our Place",
+    "  Map": "Locate Us On Map",
+    "NumberEn":"attention numbers in english",
+    "GetQuit":"Get Quick Touch With Us",
+    "NumberEs":"attention numbers in Espanish",
+  "Comodidad":"for your comfort",
+  "HowCan": "How Can We Help You?",
+  "Free":"Free Consultation",
+  "GetAFree":"Get A Free Quote",
+  "FullName": "Full Name",
+  "EmailA": " Email Address",
+  "PhoneNumber":" Phone Number",
+  "ZipCode":"Zip Code",
+  "Message":"Message"
 
-
-
-
-
-
+  
+  
 
 
 }
