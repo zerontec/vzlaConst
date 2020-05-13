@@ -86,7 +86,7 @@
     "Vission":"¿Cuál es nuestra visión?",
     "TextVision": "Tenemos la visión de crecer, expandirnos y llegar a muchos rincones de nuestro país. realizando y garantizando la satisfacción de todos nuestros clientes.",
     
-    "Visit":"Visita nuestra Instalaciones",
+    "Visit":"Visita nuestras Instalaciones",
   "  Map": "Ubicanos en el mapa",
   "NumberEn":"Numeros de Atención en Ingles",
   "GetQuit":"Obtenga contacto rápido con nosotros",
@@ -100,7 +100,9 @@
   "EmailA": " Direccion de Correo",
   "PhoneNumber":" Numero Telefonico",
   "ZipCode":"Codigo Postal",
-  "Message":"Mensaje"
+  "Message":"Mensaje",
+  "Reconstruction": "Reconstrucción"
+  
 
 
   

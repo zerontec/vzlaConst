@@ -97,10 +97,10 @@
                                                 routerLinkActive="router-link-active">{{ 'Contact' | transloco }}</a></li>
                       
                                             
-                                              <li><a >Idioma </a>
+                                              <li><a ><i class="fa fa-globe"> </i> </a>
                                                 <ul>
                                                     <select 
-                                                    [ngModel]="selectedLang"
+                                                    [ngModel]="selectLang"
                                                     (ngModelChange)="selectLanguage($event)">
                                                     <option value="es">
                                                         {{ 'Español.es' | transloco }}

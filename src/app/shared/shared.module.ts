@@ -14,6 +14,7 @@ import { PopOverComponent } from './animations/pop-over/pop-over.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [FooterComponent,
     HeaderComponent,

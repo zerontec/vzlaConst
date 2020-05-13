@@ -31,8 +31,8 @@
 <!-- fontello -->
 <link rel="stylesheet" type="text/css" href="./assets/css/fontello.css"/ async>
 
+<link rel="manifest" href="manifest.webmanifest">
 
-<!-- REVOLUTION LAYERS STYLES -->
 
 
 <!-- prettyphoto -->
@@ -59,7 +59,13 @@
 
 <body>
   <div class="page">
-  <app-root></app-root>
+  <app-root>
+
+    <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "line-spin-fade-rotating" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+  </app-root>
+<noscript>Please enable Javascript to continue using this Aplication.</noscript>
+
+
 </div>
 
 

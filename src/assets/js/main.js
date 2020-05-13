@@ -4,6 +4,7 @@
   Author :    CymolThemes
 
 ========================================================================================== */
+function init_plugins(){
 ! function(t) {
     "use strict";
     t(window).on("load", function() {
@@ -301,3 +302,6 @@ jQuery(document).ready(function($) {
 
      t(function() {})
 }(jQuery);
+
+
+}

@@ -1,7 +1,7 @@
 
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule, APP_INITIALIZER , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+
 
 import { AppComponent } from './app.component';
 
@@ -10,11 +10,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import { RouterModule } from '@angular/router';
-import { environment } from 'src/environments/environment';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {VgCoreModule} from 'videogular2/compiled/core';
 import {VgControlsModule} from 'videogular2/compiled/controls';
@@ -30,6 +30,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { APP_ROUTES } from './app.routes';
 import { SUB_RUTAS } from './sub.rutas';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -53,11 +55,13 @@ import { SUB_RUTAS } from './sub.rutas';
     SharedModule,
     CoreModule,
     TranslocoRootModule,
-    BrowserAnimationsModule,
      APP_ROUTES,
     SUB_RUTAS,
+    NgxSpinnerModule,
     HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
