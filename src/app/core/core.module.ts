@@ -22,6 +22,8 @@ import { ServRemodelingComponent } from './components/services/serv-remodeling/s
 import { ServCpermitsComponent } from './components/services/serv-cpermits/serv-cpermits.component';
 import { ServPreviewComponent } from './components/services/serv-preview/serv-preview.component';
 import { ServProposalComponent } from './components/services/serv-proposal/serv-proposal.component';
+import { MoreServicesComponent } from './components/more-services/more-services.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 
 
@@ -38,7 +40,9 @@ import { ServProposalComponent } from './components/services/serv-proposal/serv-
     ServRemodelingComponent,
     ServCpermitsComponent,
     ServPreviewComponent,
-    ServProposalComponent],
+    ServProposalComponent,
+    MoreServicesComponent,
+    ProjectDetailComponent],
   imports: [
     CommonModule,
     SharedModule,

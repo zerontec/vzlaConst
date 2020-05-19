@@ -26,6 +26,7 @@
     "Remodelinp": "Remodeling Project",
     "Constructionp": "Construction Permits",
     "Proposalp": "Proposal Plans",
+    "Proposaptext":"All About Proposal Plans ",
     "Projectp": "Project Preview",
     "Weare": "We Are Aa Construction Company At Your Services ",
     "Weoffer": "We offer a wide range of services, striving to give the best for the satisfaction of our clients. We create spaces for your home, your Business, for you.",
@@ -44,13 +45,14 @@
     "Architexth":"3d architecture projects request yours and insured with a 100% satisfaction guarantee.",
     
     "Aboutc": "About Consultancy",
-    "Improve": "Mejores su Calidad de Vida Acerquese a Expertos",
+    "Improve": "Improve Living Quality, Approach Experts",
     "Textrph": "Part of experts team to manage commercial, institutional, and industrial projects",
     "Cpmunicipal": "Construction Permits  City Hall",
     "Cpmunicipaltext":"Shape and orientation of the building, solar protections, passive solar systems" ,
 
     "Wemeke": "We Make Connections",
     "Explorerp":"Explore Recent Projects",
+    "ExplorerpText":"The argument in favor of using filler text goes something like this: If you use real iller text goes something content in the design. ",
     "Getintouch": " Get In Touch",
     "Useful": "Useful Links",
     "Oursn": " Our social networks",
@@ -81,11 +83,11 @@
     "Vission":"What Is Our Vision?",
     "TextVision": "We have the vision to grow, expand and reach many corners of our country. carrying out and guaranteeing the satisfaction of all our clients.",
     
-    "Visit":"Visit Our Place",
-    "  Map": "Locate Us On Map",
-    "NumberEn":"attention numbers in english",
-    "GetQuit":"Get Quick Touch With Us",
-    "NumberEs":"attention numbers in Espanish",
+  "Visit":"Visit Our Place",
+  "Map": "Locate Us On Map",
+  "NumberEn":"attention numbers in english",
+  "GetQuit":"Get Quick Touch With Us",
+  "NumberEs":"attention numbers in Espanish",
   "Comodidad":"for your comfort",
   "HowCan": "How Can We Help You?",
   "Free":"Free Consultation",
@@ -95,7 +97,8 @@
   "PhoneNumber":" Phone Number",
   "ZipCode":"Zip Code",
   "Message":"Message",
-  "Reconstruction": "Reconstrucción"
+  "Reconstruction": "Reconstrucción",
+  "Rigth":"All rights Reserved"
 
   
   

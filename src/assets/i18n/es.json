@@ -27,6 +27,7 @@
     "Remodelinp": "Proyectos de Remodelacion",
     "Constructionp": "Permisos de Construccion",
     "Proposalp": "Planos de Propuetas",
+    "Proposaptext":"Todo lo relacionado  para Planos de Propuestas",
     "Projectp": "Previsulizacion de Proyectos",
     "Weare": "Somos una empresa de Construcción a su Servicios",
     "Weoffer": " Ofrecemos una amplia gama de servicios, esforzándonos por dar lo mejor para la satisfacción de nuestros clientes. Creamos espacios para su hogar, su negocio, para usted",
@@ -51,9 +52,11 @@
     "Textrph": "Parte del Equipo de expertos para Gestionar proyectos comerciales, Institucionales e Industriales",
     "Cpmunicipal": "Permisos de Construcción Municipal", 
     "Cpmunicipaltext":"Gestionamos todo el proceso para la solicitud de los permisos",
-
+  
+   
     "Wemeke": "Hacemos Conexiones",
     "Explorerp":"Explore Proyectos Recientes",
+    "ExplorerpText":"Mira Conoce algunos de nuestros trabajos opina escribe: Hermosas Cocinas, Trabajos de Remodelacion, Trabajos en Carpinteria, Ventanas, Sotanos, Pisos   ",
     "Getintouch": " Pongase en Contacto",
     "Useful": "Enlaces utiles",
     "Oursn": " Nuestras Redes Sociales",
@@ -101,7 +104,9 @@
   "PhoneNumber":" Numero Telefonico",
   "ZipCode":"Codigo Postal",
   "Message":"Mensaje",
-  "Reconstruction": "Reconstrucción"
+  "Reconstruction": "Reconstrucción",
+
+  "Rigth":"Todos los Derechos Reservados"
   
 
 

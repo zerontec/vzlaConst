@@ -9,7 +9,7 @@ import { fadeAnimation } from './shared/animations/fadeIntRoute';
   animations: [fadeAnimation]
 })
 export class AppComponent {
-  title = 'mdb-angular-free';
+  title = 'Venezuela Construction';
 
 
 constructor( ){
