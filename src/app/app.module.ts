@@ -59,6 +59,7 @@ import { environment } from '../environments/environment';
     SUB_RUTAS,
     NgxSpinnerModule,
     HttpClientModule,
+   
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

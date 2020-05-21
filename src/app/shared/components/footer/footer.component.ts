@@ -9,15 +9,19 @@ import { TranslocoService } from '@ngneat/transloco';
 export class FooterComponent implements OnInit {
   title = 'angular-i18n-transloco';
   selectLang = 'en';
+  hoy: any = new Date();
 
   constructor(private translocoService: TranslocoService) {
 
 
     this.selectLanguage();
+   
   }
 
   ngOnInit() {
   }
+
+
 
   selectLanguage(language: string = this.selectLang) {
     this.translocoService.setActiveLang( language );

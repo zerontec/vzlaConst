@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
 
   title = 'angular-i18n-transloco';
   selectLang = 'en';
+  hoy: any = new Date();
 
   constructor(private translocoService: TranslocoService) {
     this.selectLanguage();

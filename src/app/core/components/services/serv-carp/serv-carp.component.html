@@ -14,41 +14,41 @@
         <div class="accordion mb-35"><!-- accordion -->
             <!-- toggle -->
             <div class="toggle cmt-style-classic cmt-toggle-title-bgcolor-skincolor">
-                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Estructural Carpentry</a></div>
+                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Structural Carpentry</a></div>
                 <div class="toggle-content">
                     <p>.</p>
                 </div>
             </div><!-- toggle end -->
             <!-- toggle -->
             <div class="toggle cmt-style-classic cmt-toggle-title-bgcolor-skincolor active">
-                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Pisos de Madera.</a></div>
+                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Wood floor.</a></div>
                 <div class="toggle-content">
                     <p>.</p>
                 </div>
             </div><!-- toggle end -->
             <!-- toggle -->
             <div class="toggle cmt-style-classic cmt-toggle-title-bgcolor-skincolor">
-                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Balcones de Madera.</a></div>
+                <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Wooden balconies.</a></div>
                 <div class="toggle-content">
                     <p>.</p>
                 </div>
             </div><!-- toggle end -->
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="mb-30">
-                    <h4 class="mb-10">Beautiful Jobs</h4>
-                    <!-- cmt-progress-bar -->
-                    
-                </div>
+            <div class="col-md-12">
+                <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+                [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let item of slides; let i = index">
+      <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
+           *ngFor="let card of item; let cardIndex = index">
+        <mdb-card class="my-1">
+          <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+        </mdb-card>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
             </div>
-            <div class="col-md-6">
-                <div class="post-featured-wrapper mb-30">
-                    <div class="post-featured">
-                        <img class="img-fluid" src="./assets/imagenP/pisob.webp" alt="">
-                    </div>
-                </div>
-            </div>
+          
         </div>
         <h4 class="mb-10">{{'WhatYouReceive' | transloco}}?</h4>
         <div class="mb-30">
