@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormuProyectComponent } from './components/formu-proyect/formu-proyect.component';
+import { AdminProjectsComponent } from './components/admin-projects/admin-projects.component';
 
 
 
@@ -10,7 +11,10 @@ import { FormuProyectComponent } from './components/formu-proyect/formu-proyect.
 declarations:[
 
 
-FormuProyectComponent],
+FormuProyectComponent,
+
+
+AdminProjectsComponent],
 
 imports: [
 

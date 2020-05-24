@@ -25,6 +25,7 @@
     "Ask": "Pregunta sobre tu",
     "Architecture": "Arquitectura",
     "Remodelinp": "Proyectos de Remodelacion",
+    "RemodelingpT":"Proyectos de remodelación de su hogar, empresa u oficina. ¿Tenemos equipos de última generación para llevar a cabo todo tipo de trabajo que desee hacer? Contáctenos",
     "Constructionp": "Permisos de Construccion",
     "Proposalp": "Planos de Propuetas",
     "Proposaptext":"Todo lo relacionado  para Planos de Propuestas",
@@ -106,7 +107,24 @@
   "Message":"Mensaje",
   "Reconstruction": "Reconstrucción",
 
-  "Rigth":"Todos los Derechos Reservados"
+  "Rigth":"Todos los Derechos Reservados",
+  "ButtonSlider":"Leer Mas ",
+
+  "PcarpA":"Carpinteria Estructural",
+  "PcarpB":"Pisos de Madera ",
+  "PcarpC":"Balcones de Madera",
+  "pbaseA":" Identificamos materiales Peligrosos en los Sotanos",
+  "pbaseB": "Realizamos reisntalación de sotanos",
+  "pbaseC":" Planiación de Futuras renovaciones",
+  "pkichenA":"Moderniza tus superficies",
+  "pkichenB":"Actualiza tus Colores",
+  "pkichenC":"No tengas miedo de ser creativo",
+  "pProjRA":"Elección de pintura",
+  "pProjRB":"Correcta Iluminación",
+  "pProjRC":"Moderniza tus superficies"
+
+
+
   
 
 

@@ -10,19 +10,16 @@ export class HomeComponent implements OnInit {
   title = 'angular-i18n-transloco';
   selectLang = 'en';
 
-  constructor( private translocoService: TranslocoService) { 
+  constructor( ) { 
   
-    this.selectLanguage();
+   
   }
 
-   
-  
-  
+
   ngOnInit() {
   }
 
-  selectLanguage(language: string = this.selectLang) {
-    this.translocoService.setActiveLang( language );
-  }
+ 
+  
 
 }

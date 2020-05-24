@@ -24,6 +24,7 @@
     "Ask": "Ask About Your",
     "Architecture": "Architecture",
     "Remodelinp": "Remodeling Project",
+    "RemodelingpT":"Remodeling projects of your home, company or office. We have last generation teams to carry out all types of work that you want to do? contact us",
     "Constructionp": "Construction Permits",
     "Proposalp": "Proposal Plans",
     "Proposaptext":"All About Proposal Plans ",
@@ -98,10 +99,22 @@
   "ZipCode":"Zip Code",
   "Message":"Message",
   "Reconstruction": "Reconstrucción",
-  "Rigth":"All rights Reserved"
+  "Rigth":"All rights Reserved",
+  "ButtonSlider":"Read More",
 
+  "PcarpA":"Structural Carpentry",
+  "PcarpB":"Wood floor ",
+  "PcarpC":"Wooden balconies",
   
-  
+  "pbaseA":" We identify Hazardous Materials in the basement",
+  "pbaseB": "We do Reinstallation in the basement",
+  "pbaseC":" Planning of future renovations",
+  "pkichenA":"Modernize your surfaces",
+  "pkichenB":"Update your colors",
+  "pkichenC":"Don't be afraid to be creative",
+  "pProjRA":"Paint Choice",
+  "pProjRB":"Correct lighting",
+  "pProjRC":"Modernize your surfaces"
 
 
 }

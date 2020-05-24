@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PopOverComponent } from './animations/pop-over/pop-over.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { FormsModule } from '@angular/forms';
+import { WhatReceiveComponent } from './components/what-receive/what-receive.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     TranslatePipe,
     PopOverComponent,
+    WhatReceiveComponent,
   ],
   imports: [
     CommonModule,
@@ -34,12 +36,14 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
 
   ],
+  providers:[],
 
   exports: [
 
     HeaderComponent,
     FooterComponent,
-    TranslatePipe
+    TranslatePipe,
+    WhatReceiveComponent
   ]
 })
 export class SharedModule { }

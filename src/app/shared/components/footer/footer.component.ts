@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoService } from '@ngneat/transloco';
+
 
 @Component({
   selector: 'app-footer',
@@ -7,15 +7,10 @@ import { TranslocoService } from '@ngneat/transloco';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  title = 'angular-i18n-transloco';
-  selectLang = 'en';
+
   hoy: any = new Date();
 
-  constructor(private translocoService: TranslocoService) {
-
-
-    this.selectLanguage();
-   
+  constructor() {
   }
 
   ngOnInit() {
@@ -23,8 +18,6 @@ export class FooterComponent implements OnInit {
 
 
 
-  selectLanguage(language: string = this.selectLang) {
-    this.translocoService.setActiveLang( language );
-  }
+  
 
 }
