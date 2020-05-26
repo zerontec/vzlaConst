@@ -10,7 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { RouterModule } from '@angular/router';
 
@@ -20,6 +20,7 @@ import {VgCoreModule} from 'videogular2/compiled/core';
 import {VgControlsModule} from 'videogular2/compiled/controls';
 import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
 import {VgBufferingModule} from 'videogular2/compiled/buffering';
+import { TranslocoRootModule } from './transloco-root.module';
 
 
 
@@ -53,7 +54,7 @@ import { environment } from '../environments/environment';
     FormsModule,
     SharedModule,
     CoreModule,
-   
+    TranslocoRootModule,
      APP_ROUTES,
     SUB_RUTAS,
     NgxSpinnerModule,
