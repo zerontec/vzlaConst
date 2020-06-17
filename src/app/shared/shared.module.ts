@@ -14,6 +14,9 @@ import { PopOverComponent } from './animations/pop-over/pop-over.component';
 import { TranslocoRootModule } from '../transloco-root.module';
 import { FormsModule } from '@angular/forms';
 import { WhatReceiveComponent } from './components/what-receive/what-receive.component';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireStorage } from '@angular/fire/storage';
+
 
 
 @NgModule({
@@ -36,7 +39,7 @@ import { WhatReceiveComponent } from './components/what-receive/what-receive.com
     HttpClientModule,
 
   ],
-  providers:[],
+  providers:[AngularFirestore, AngularFireStorage],
 
   exports: [
 

@@ -1,76 +1,63 @@
-<!-- <div class="row">
-    <div class="col-md-6">
-      <form #projectForm="ngForm" (ngSubmit)="save(projectForm.value)" novalidate>
-        <div class="form-group">
-          <label for="title">Titulo Proyecto</label>
-          <input #title="ngModel" 
-          [(ngModel)]="project.title" 
-          name="title" type="text" 
-          class="form-control" 
-          id="title" required>
-          <div class="alert alert-danger" *ngIf="title.touched && title.invalid">
-            Titulo es Requerido
-          </div>
-        </div>
-  
-        <div class="form-group">
-            <label for="fecha">Fecha</label>
-            <div class="input-group">
-              <span class="iput-group-addon"></span>
-              <input type="date" name="fecha" ngModel #fecha="ngModel" 
-              class="form-control" 
-              id="fecha"
-               required >
-            </div>
-            <div class="alert alert-danger" *ngIf="fecha.touched && fecha.invalid">
-              <div *ngIf="fecha.errors.required">Fecha es Requerida .</div>
-             
-            </div>
-                </div>
-        <div class="form-group">
-          <label for="category">Categoria</label>
-          <select #category="ngModel" 
-          [(ngModel)]="project.category" 
-          name="category" id="category" 
-          class="form-control" required>
-            <option></option>
-            <option *ngFor="let c of categories$ | async" [value]="c.$key">
-              {{c.name}}
-            </option>
-          </select>
-          <div class="alert alert-danger" *ngIf="category.touched && category.invalid">
-            La Categoria es Requerida
-          </div>
-        </div>
-  
-        <div class="form-group">
-          <label for="imageUrl">URL de la Imagen</label>
-          <input #imageUrl="ngModel" 
-          [(ngModel)]="product.imageUrl" 
-          name="imageUrl" 
-          type="text" class="form-control" 
-          id="imageUrl" 
-          required url>
-          <div class="alert alert-danger" *ngIf="imageUrl.touched && imageUrl.invalid">
-            <div *ngIf="imageUrl.errors.required">La Imagen es Requerida</div>
-            <div *ngIf="imageUrl.errors.url">URL Invalida </div>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-md-6">
+    <form [formGroup]="newProjectForm" (ngSubmit)="addNewProject(newProjectForm.value)" novalidate>
+      <div class="form-group">
+        <label for="title">Titulo</label>
+        <input  formControlName="titleProject"
+        class="form-control" 
+        required>
        
-  
+      </div>
+      <div class="form-group">
+        <label for="cliente">Cliente</label>
+        <input  formControlName="clienteProject"
+        class="form-control" 
+        required>
+       
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripcion</label>
+        <input  formControlName="descripcionProject"
+        class="form-control" 
+        required>
+       
+      </div>
+
+     
+     <!--  <div class="form-group">
+        <label for="category">Categoria</label>
+        <select formControlName="categoryProject"
+         
+        class="form-control" required> -->
+         
+          <!-- <option *ngFor="let c of categories$ | async" [value]="c.$key">
+            {{c.name}}
+          </option> -->
+       <!--  </select>
+       
+      </div> -->
+
+      <div class="form-group">
+        <div class="container-input-file">
+          <label class="custom-file">
+            <input type="file" formControlName="imageProject" (change)="handleImage($event)" />
+          <span>CHOOSE IMAGE</span>
+          </label>
+        </div>
         
-      
-  
-       <div class="form-group">
-          <button class="btn btn-primary" 
-          [disabled]="projectForm.invalid">Salvar</button>
-          <button type="button" (click)="delete()" class="btn btn-danger" *ngIf="id">Borrar</button>
-       </div>
-  
-      </form>
-    </div>
-    <div class="col-md-6" *ngIf="product.title || product.imageUrl">
-      <product-card [product]="product" [width]="22" [show-actions]="false"></product-card>
-    </div>
+      </div>
+   
+
+
+
+     <div class="form-group">
+        <button class="btn btn-primary" 
+        [disabled]="addNewProject.invalid" type="submit">Salvar</button>
+        
+     </div>
+
+    </form>
   </div>
-   -->
+ 
+</div>

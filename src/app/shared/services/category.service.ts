@@ -1,23 +1,14 @@
-/* import { Injectable } from '@angular/core';
+ import { Injectable } from '@angular/core';
+ 
 
-@Injectable({
+ @Injectable({
   providedIn: 'root'
 })
 export class CategoryService {
 
-  constructor() { }
+  constructor( ) { }
 
 
+  
 
-  getCategories(){
-return this.db.list('/categories', {
-
-  query:{
-
-    orderBychild: 'name'
-  }
-});
-
-  }
 }
- */

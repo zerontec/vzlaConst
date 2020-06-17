@@ -11,8 +11,11 @@
     "Kitchen-Remodeling":"Remodelacion de Cocinas",
     "Remodeling-Project":"Proyectos de Remodelacion",
     "Construction-Permits": "Permisos de Construcción",
+    "Contrutext":"Gestionamos Permisos de Construcción y ofrecemos asesoría personalizada para planificación y desarrollo de us proyectos",
     "Project-Preview":"Previsualizacion de Proyectos",
-    
+    "ProjectText":"Solicite nuestro asesoramiento personalizado para plantear sus ideas como punto de partida, ver el desarrollo y el resultado final de su proyecto a través del modelado y la representación 3D, además contamos con las herramientas y capacidades técnicas para construir su proyecto en estricto orden de calidad  ",
+    "Dont":"No lo dude, contáctenos para obtener una mejor ayuda y servicios.",
+    "viewMoreP": "Vea más Proyectos",
 
     "Carpentry":"Carpinteria",
     "Remodeling": "Remodelacion en",
@@ -90,12 +93,12 @@
     "Vission":"¿Cuál es nuestra visión?",
     "TextVision": "Tenemos la visión de crecer, expandirnos y llegar a muchos rincones de nuestro país. realizando y garantizando la satisfacción de todos nuestros clientes.",
     
-    "Visit":"Visita nuestras Instalaciones",
-  "  Map": "Ubicanos en el mapa",
-  "NumberEn":"Numeros de Atención en Ingles",
+  "Visit":"Visita nuestras Instalaciones",
+  "Map": "Ubicanos en el mapa",
+  "NumberEn":"Numeros para Atención en Ingles",
   "GetQuit":"Obtenga contacto rápido con nosotros",
   "NumberEs":"Numeros para Atencion en Español",
-
+  "AtencionPer":" Para Atención Personalizada",
   "Comodidad":"Para tu Comodidad",
   "HowCan": "¿Como podemos ayudarte?",
   "Free":"Consulta Gratis",
@@ -110,6 +113,9 @@
   "Rigth":"Todos los Derechos Reservados",
   "ButtonSlider":"Leer Mas ",
 
+  
+
+
   "PcarpA":"Carpinteria Estructural",
   "PcarpB":"Pisos de Madera ",
   "PcarpC":"Balcones de Madera",
@@ -122,6 +128,7 @@
   "pProjRA":"Elección de pintura",
   "pProjRB":"Correcta Iluminación",
   "pProjRC":"Moderniza tus superficies"
+
 
 
 

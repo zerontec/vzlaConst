@@ -10,9 +10,8 @@ export class ServRemodelingComponent implements OnInit, AfterViewInit {
     {img: './assets/imgSliderS/remodelingA.webp'},
     {img: './assets/imgSliderS/remodelingB.webp'},
     {img: './assets/imgSliderS/remodelingC.webp'},
-   
+
   ];
-  
   slides: any = [[]];
   
   constructor(private renderer: Renderer2) { }

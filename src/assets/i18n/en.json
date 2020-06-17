@@ -10,9 +10,11 @@
     "Kitchen-Remodeling":"Kitchen-Remodeling",
     "Remodeling-Project":"Remodeling-Project",
     "Construction-Permits": "Construction-Permits",
+    "Contrutext":"We manage construction permits and offer you personalized advice for planning and developing your projects",
     "Project-Preview":"Project-Preview",
-    
-
+    "ProjectText":"Request our personalized advice to present your ideas as a starting point, see the development and final result of your project through 3D modeling and representation, we also have the tools and technical capabilities to build your project in strict quality order ",
+    "Dont":"Don’t hesitate, contact us for better help and services",
+    "viewMoreP": "View more Project",
     "Carpentry":"Carpentry",
     "Remodeling": "Remodeling ",
     "Bathroom":"Bathroom",
@@ -89,6 +91,7 @@
   "NumberEn":"attention numbers in english",
   "GetQuit":"Get Quick Touch With Us",
   "NumberEs":"attention numbers in Espanish",
+  "AtencionPer":" For personalized Attention",
   "Comodidad":"for your comfort",
   "HowCan": "How Can We Help You?",
   "Free":"Free Consultation",

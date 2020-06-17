@@ -6,6 +6,8 @@ import { ServKitchenComponent } from './core/components/services/serv-kitchen/se
 import { ServRemodelingComponent } from './core/components/services/serv-remodeling/serv-remodeling.component';
 import { ServCpermitsComponent } from './core/components/services/serv-cpermits/serv-cpermits.component';
 import { ServPreviewComponent } from './core/components/services/serv-preview/serv-preview.component';
+import { AdminProjectsComponent } from './admin/components/admin-projects/admin-projects.component';
+import { FormuProyectComponent } from './admin/components/formu-proyect/formu-proyect.component';
 
 
 
@@ -18,9 +20,11 @@ const subroutes: Routes = [
       {path: 'Remodeling-Project', component: ServRemodelingComponent},
       {path: 'Construction-Permits', component: ServCpermitsComponent},
       {path: 'Project-Preview', component: ServPreviewComponent},
+      ],
 
-      ]
-  }, ];
+  }
+
+];
 
 
 export const SUB_RUTAS = RouterModule.forChild(subroutes, );

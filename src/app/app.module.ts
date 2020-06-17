@@ -10,6 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import {AdminModule} from './admin/admin.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { RouterModule } from '@angular/router';
@@ -32,6 +33,7 @@ import { APP_ROUTES } from './app.routes';
 import { SUB_RUTAS } from './sub.rutas';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 
 
@@ -54,6 +56,7 @@ import { environment } from '../environments/environment';
     FormsModule,
     SharedModule,
     CoreModule,
+    AdminModule,
     TranslocoRootModule,
      APP_ROUTES,
     SUB_RUTAS,
@@ -63,7 +66,7 @@ import { environment } from '../environments/environment';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 
