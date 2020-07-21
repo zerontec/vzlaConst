@@ -33,146 +33,53 @@
 
 <section class="cmt-row portfolio-top-section clearfix">
    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/images/projec1.webp" alt="image">
-                    </div><!-- featured-thumbnail end-->
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>Insulation</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">Install insulation</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/images/projec2.webp" alt="image">
-                    </div><!-- featured-thumbnail end-->
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>Textures</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">interior textures</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/images/projec3.webp" alt="image">
-                    </div>
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>exterior</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">install exterior</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/imagenP/cocinad.webp" alt="image">
-                    </div><!-- featured-thumbnail end-->
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>exterior</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">mechanical trim</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/imagenP/cocinab.webp" alt="image">
-                    </div><!-- featured-thumbnail end-->
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>exterior</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">landscaping</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1 mb-30">
-                    <!-- featured-thumbnail -->
-                    <div class="featured-thumbnail">
-                        <img class="img-fluid" src="./assets/imagenP/cocinac.webp" alt="image">
-                    </div><!-- featured-thumbnail end -->
-                    <!-- cmt-box-view-overlay -->
-                    <div class="cmt-box-view-overlay">
-                        <div class="portfolio-icon-box">
-                            <a href="portfolio-single.html"><i class="ti ti-plus"></i></a>
-                        </div>
-                    </div><!-- cmt-box-view-overlay end-->
-                    <div class="featured-content">
-                        <div class="category">
-                            <p>exterior</p>
-                        </div>
-                        <div class="featured-title">
-                            <h5><a href="portfolio-single.html">pour foundation</a></h5>
-                        </div>
-                    </div>
-                </div><!-- featured-imagebox -->
-            </div>
+    <div class="container" >
+        <div class="row" >
+        
+    <div class="card" *ngFor="let item of items | async">
+        <img class="card-img-top" [src]="item.downloadURL">
+        <div class="card-body">
+            <h5 class="card-title">{{item.clienteProject}}</h5>
+        </div> 
+    </div>
         </div><!-- row end -->
     </div>
+
+<table *ngIf="imageList">
+<tr *ngFor="let i of rowIndexArray">
+
+    <td>
+        <div class="imagebox" *ngIf="i==0">
+        <a href="">
+            <img [src]="imageList[3*i].imageUrl" alt="" class="img-fluid">
+            <span class="imagebox-desc">Nueva imagen</span></a>
+        </div>
+        </td>
+<td>
+<div class="imagebox" *ngIf="i!=0">
+
+    <img [src]="imageList[3*i -1].imageUrl" alt="" class="img-fluid">
+    <span class="imagebox-desc">{{imageList[3*i -1].caption}}</span>
+</div>
+</td>
+<td *ngIf="imageList[3*i] ">
+<div class="imagebox">
+
+    <img [src]="imageList[3*i  ].imageUrl" alt="" class="img-fluid">
+    <span class="imagebox-desc">{{imageList[3*i  ].caption}}</span>
+</div>
+</td>
+<td *ngIf="imageList[3*i+1]"> 
+<div class="imagebox">
+
+    <img [src]="imageList[3*i +1].imageUrl" alt="" class="img-fluid">
+    <span class="imagebox-desc">{{imageList[3*i + 1].caption}}</span>
+</div>
+</td> 
+
+  
+</tr>
+
+</table>
+
 </section>

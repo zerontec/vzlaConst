@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectService} from '../../../shared/services/project.service';
+import { ProjectService} from '../../../../shared/services/project.service';
 import { Observable } from 'rxjs';
-import { IProject } from '../../../shared/models/project';
+import { IProject } from '../../../../shared/models/project';
 
 
 @Component({

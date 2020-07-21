@@ -1,1 +1,128 @@
-<p>project works!</p>
+ <!-- page-title -->
+ <div class="cmt-page-title-row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"> 
+                <div class="title-box">
+                    <div class="page-title-heading">
+                        <h1 class="title">Escriorio</h1>
+                    </div><!-- /.page-title-captions -->
+                    <div class="breadcrumb-wrapper">
+                        <span>
+                            <a title="Homepage" href="index.html"><i class="ti ti-home"></i> Home</a>
+                        </span>
+                        <span class="cmt-bread-sep"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                        <span><span>escritorio</span></span>
+                    </div>
+                </div>
+            </div><!-- /.col-md-12 -->  
+        </div><!-- /.row -->  
+    </div><!-- /.container -->
+</div><!-- page-title end-->
+
+
+ <!--site-main start-->
+ <div class="site-main">
+    <div class="sidebar cmt-sidebar-left cmt-bgcolor-grey clearfix">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-8 content-area order-1 order-lg-2">
+                    
+
+                  
+<router-outlet></router-outlet>
+
+
+                </div>
+                <div class="col-lg-4 widget-area sidebar-left order-2 order-lg-1">
+             <!--        <aside class="widget widget-search">
+                        <h3 class="widget-title">Search</h3>
+                        <form role="search" method="get" class="search-form" action="#">
+                            <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <i class="fa fa-search"></i>
+                            <input type="search" class="input-text" placeholder="Search …" value="" name="s">
+                            </label>
+                        </form>
+                    </aside> -->
+                    <aside class="widget widget-nav-menu">
+                        <h3 class="widget-title">Panel de Control</h3>
+                        <ul class="widget-menu">
+                            <li>
+                                <i class="flaticon flaticon-skyline"></i>
+                                <h5>
+                                    <a  [routerLink]="['new/project']" routerLinkActive="router-link-active">Agregar Imagen home </a>
+                                </h5>
+                                <p></p>
+                            </li>
+                            <li>
+                                <i class="flaticon flaticon-sketch"></i>
+                                <h5>
+                                     <a [routerLink]="['new/image']" routerLinkActive="router-link-active">Agregar Imagenes Galeria</a> 
+                                </h5>
+                                <p></p>
+                            </li>
+                            <li>
+                                <i class="flaticon flaticon-idea"></i>
+                                <h5>
+                                    <a [routerLink]="['new/imagenes']" routerLinkActive="router-link-active">Otra opcion</a> 
+                                </h5>
+                                <p></p>
+                            </li>
+                            <li>
+                                <i class="flaticon flaticon-crane"></i>
+                                <h5>
+                                    <a >texti</a>
+                                </h5>
+                                <p></p>
+                            </li>
+                            <li>
+                                <i class="flaticon flaticon-process"></i>
+                                <h5>
+                                    <a >texti</a>
+                                </h5>
+                                <p></p>
+                            </li>
+                            <li >
+                                <i class="flaticon flaticon-process"></i>
+                                <h5>
+                                    <a >texti</a>
+                                </h5>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </aside>
+                    <aside class="widget widget-link">
+                        <h3 class="widget-title">teto</h3>
+                        <div class="cmt-social-links-wrapper list-inline">
+                            <ul class="social-icons square">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside class="widget widget_media_image">
+                        <div class="banner-img-box cmt-textcolor-white">
+                            <div class="featured-content featured-content-banner">
+                                <div class="featured-desc">
+                                    <p>Add Banner</p>
+                                </div>
+                                <div class="featured-title cmt-box-title">
+                                    <h5>para publicidad o cualuiero otra cosa <br><span class="cmt-textcolor-skincolor"></span></h5>
+                                </div>
+                                <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-bgcolor-skincolor mt-25" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div><!-- row end -->
+        </div>
+    </div>
+</div>

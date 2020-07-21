@@ -7,7 +7,7 @@ import { ServRemodelingComponent } from './core/components/services/serv-remodel
 import { ServCpermitsComponent } from './core/components/services/serv-cpermits/serv-cpermits.component';
 import { ServPreviewComponent } from './core/components/services/serv-preview/serv-preview.component';
 import { AdminProjectsComponent } from './admin/components/admin-projects/admin-projects.component';
-import { FormuProyectComponent } from './admin/components/formu-proyect/formu-proyect.component';
+import { FormuProyectComponent } from './admin/components/project/formu-proyect/formu-proyect.component';
 
 
 

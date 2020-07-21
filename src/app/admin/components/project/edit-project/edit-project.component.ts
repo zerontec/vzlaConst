@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import {IProject} from '../../../shared/models/project';
+import {IProject} from '../../../../shared/models/project';
 import { ProjectService } from 'src/app/shared/services/project.service';
 @Component({
   selector: 'app-edit-project',

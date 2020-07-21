@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {IProject}   from '../../../shared/models/project';
-import {ProjectService } from '../../../shared/services/project.service';
+import {IProject} from '../../../../shared/models/project';
+import {ProjectService } from '../../../../shared/services/project.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FileI } from 'src/app/shared/models/file.interfaces';
+
+
 @Component({
   selector: 'app-formu-proyect',
   templateUrl: './formu-proyect.component.html',
@@ -10,19 +13,24 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class FormuProyectComponent implements OnInit {
 
   private image: any;
+  estaSobreElemento = false;
+  
+
+  public  addNewProjectForm = new FormGroup({
+    titleProject: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    clienteProject : new FormControl('', Validators.required),
+    descripcionProject: new FormControl('', Validators.required),
+   imageProject: new FormControl('', Validators.required),
+  });
+
+
+
   constructor( private protSvc: ProjectService) { }
 
 
-  newProjectForm = new FormGroup({
-    titleProject: new FormControl('', Validators.required),
-    clienteProject : new FormControl('', Validators.required),
-    descripcionProject: new FormControl('', Validators.required),
-    tagsProject: new FormControl('', Validators.required),
-    imageProject: new FormControl('', Validators.required),
-  });
   ngOnInit() {
 
- 
+
   }
 
   addNewProject(data: IProject) {

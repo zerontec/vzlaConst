@@ -39,7 +39,7 @@ export class ProjectService {
             const id = a.payload.doc.id;
             return { id, ...data };
           })
-        )
+        ) 
       );
   }
   public getOneProject(id: IProject): Observable<IProject> {
@@ -59,17 +59,17 @@ export class ProjectService {
   }
 
   public preAddAndUpdateProject(project: IProject, image: FileI): void {
-    this.uploadImage(project, image);
+    this.uploadImage(project,image);
   }
 
   private saveProject(project: IProject) {
     const projectObj = {
       titleProject: project.titleProject,
-      clienteProject:project.clienteProject,
+      clienteProject: project.clienteProject,
       descripcionProject: project.descripcionProject,
       imageProject: this.downloadURL,
       fileRef: this.filePath,
-      tagsProject: project.tagsProject,
+
     };
 
     if (project.id) {
@@ -81,10 +81,11 @@ export class ProjectService {
   }
 
   private uploadImage(project: IProject, image: FileI) {
-    this.filePath = `images/${image.name}`;
-    const fileRef = this.storage.ref(this.filePath);
-    const task = this.storage.upload(this.filePath, image);
-    task.snapshotChanges()
+
+ this.filePath = `images/${image.name}`;
+ const fileRef = this.storage.ref(this.filePath);
+ const task = this.storage.upload(this.filePath, image);
+ task.snapshotChanges()
       .pipe(
         finalize(() => {
           fileRef.getDownloadURL().subscribe(urlImage => {
@@ -93,12 +94,9 @@ export class ProjectService {
           });
         })
       ).subscribe();
+    }
   }
 
 
-}
 
 
-
-
- 

@@ -8,7 +8,7 @@ import { ServBasamentComponent } from './core/components/services/serv-basament/
 import { ServCarpComponent } from './core/components/services/serv-carp/serv-carp.component';
 import { ServKitchenComponent } from './core/components/services/serv-kitchen/serv-kitchen.component';
 import { AdminProjectsComponent } from './admin/components/admin-projects/admin-projects.component';
-import { FormuProyectComponent } from './admin/components/formu-proyect/formu-proyect.component';
+import { FormuProyectComponent } from './admin/components/project/formu-proyect/formu-proyect.component';
 
 
 const appRoutes: Routes = [

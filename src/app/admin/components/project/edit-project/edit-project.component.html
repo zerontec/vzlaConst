@@ -41,7 +41,7 @@
         <div class="form-group">
           <div class="container-input-file">
             <label class="custom-file">
-              <input type="file" formControlName="imageProject" (change)="handleImage($event)" />
+              <input type="file" formControlName="editProjectForm" (change)="handleImage($event)" />
             <span>CHOOSE IMAGE</span>
             </label>
           </div>
@@ -53,7 +53,7 @@
   
        <div class="form-group">
           <button class="btn btn-primary" 
-          [disabled]="addNewProject.invalid">Salvar</button>
+          [disabled]="editProjectForm.invalid">Salvar</button>
           
        </div>
   
