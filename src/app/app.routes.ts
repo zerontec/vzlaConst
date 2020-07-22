@@ -9,6 +9,7 @@ import { ServCarpComponent } from './core/components/services/serv-carp/serv-car
 import { ServKitchenComponent } from './core/components/services/serv-kitchen/serv-kitchen.component';
 import { AdminProjectsComponent } from './admin/components/admin-projects/admin-projects.component';
 import { FormuProyectComponent } from './admin/components/project/formu-proyect/formu-proyect.component';
+import { GalleryComponent } from './core/components/gallery/gallery.component';
 
 
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
 
 {path: 'about', component: AboutComponent},
 {path: 'projects', component: ProjectsComponent},
+{path: 'gallery', component:  GalleryComponent},
 {path: 'contact', component:  ContactComponent},
 
 

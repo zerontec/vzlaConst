@@ -16,6 +16,7 @@
     "ProjectText":"Solicite nuestro asesoramiento personalizado para plantear sus ideas como punto de partida, ver el desarrollo y el resultado final de su proyecto a través del modelado y la representación 3D, además contamos con las herramientas y capacidades técnicas para construir su proyecto en estricto orden de calidad  ",
     "Dont":"No lo dude, contáctenos para obtener una mejor ayuda y servicios.",
     "viewMoreP": "Vea más Proyectos",
+    "viewMoreG": "Ver mas en Galeria",
 
     "Carpentry":"Carpinteria",
     "Remodeling": "Remodelacion en",
@@ -60,6 +61,7 @@
    
     "Wemeke": "Hacemos Conexiones",
     "Explorerp":"Explore Proyectos Recientes",
+    "viewGallery": "Mire Nuestra Galeria",
     "ExplorerpText":"Mira Conoce algunos de nuestros trabajos opina escribe: Hermosas Cocinas, Trabajos de Remodelacion, Trabajos en Carpinteria, Ventanas, Sotanos, Pisos   ",
     "Getintouch": " Pongase en Contacto",
     "Useful": "Enlaces utiles",
@@ -127,7 +129,8 @@
   "pkichenC":"No tengas miedo de ser creativo",
   "pProjRA":"Elección de pintura",
   "pProjRB":"Correcta Iluminación",
-  "pProjRC":"Moderniza tus superficies"
+  "pProjRC":"Moderniza tus superficies",
+  "Gallery": "Galeria"
 
 
 

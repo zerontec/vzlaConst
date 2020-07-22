@@ -15,6 +15,7 @@
     "ProjectText":"Request our personalized advice to present your ideas as a starting point, see the development and final result of your project through 3D modeling and representation, we also have the tools and technical capabilities to build your project in strict quality order ",
     "Dont":"Don’t hesitate, contact us for better help and services",
     "viewMoreP": "View more Project",
+    "viewMoreG": "View more in Gallery",
     "Carpentry":"Carpentry",
     "Remodeling": "Remodeling ",
     "Bathroom":"Bathroom",
@@ -55,6 +56,7 @@
 
     "Wemeke": "We Make Connections",
     "Explorerp":"Explore Recent Projects",
+    "viewGallery": "Look at our gallery",
     "ExplorerpText":"The argument in favor of using filler text goes something like this: If you use real iller text goes something content in the design. ",
     "Getintouch": " Get In Touch",
     "Useful": "Useful Links",
@@ -117,7 +119,8 @@
   "pkichenC":"Don't be afraid to be creative",
   "pProjRA":"Paint Choice",
   "pProjRB":"Correct lighting",
-  "pProjRC":"Modernize your surfaces"
+  "pProjRC":"Modernize your surfaces",
+  "Gallery": "Gallery"
 
 
 }

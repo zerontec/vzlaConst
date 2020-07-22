@@ -24,6 +24,7 @@ import { ServPreviewComponent } from './components/services/serv-preview/serv-pr
 import { ServProposalComponent } from './components/services/serv-proposal/serv-proposal.component';
 import { MoreServicesComponent } from './components/more-services/more-services.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 
@@ -42,7 +43,8 @@ import { ProjectDetailComponent } from './components/project-detail/project-deta
     ServPreviewComponent,
     ServProposalComponent,
     MoreServicesComponent,
-    ProjectDetailComponent],
+    ProjectDetailComponent,
+    GalleryComponent],
   imports: [
     CommonModule,
     SharedModule,
