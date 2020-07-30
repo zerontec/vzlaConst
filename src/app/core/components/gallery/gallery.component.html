@@ -38,13 +38,13 @@
         
     <div class="card" *ngFor="let item of items | async">
         <img class="card-img-top" [src]="item.downloadURL">
-        <div class="card-body">
+        <!-- <div class="card-body">
             <h5 class="card-title">{{item.clienteProject}}</h5>
-        </div> 
+        </div>  -->
     </div>
         
     </div>
-
+<!-- 
 <table *ngIf="imageList">
 <tr *ngFor="let i of rowIndexArray">
 
@@ -81,5 +81,5 @@
 </tr>
 
 </table>
-
+ -->
 </section>

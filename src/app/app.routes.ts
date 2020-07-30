@@ -5,7 +5,7 @@ import { ProjectsComponent } from './core/components/projects/projects.component
 import { ContactComponent } from './core/components/contact/contact.component';
 import { GalleryComponent } from './core/components/gallery/gallery.component';
 import { LoginComponent } from './admin/components/login/login.component';
-import { RegisterComponent } from './admin/components/register/register.component';
+// import { RegisterComponent } from './admin/components/register/register.component';
 import { SendEmailComponent } from './auth/send-email/send-email.component';
 
 const appRoutes: Routes = [
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
 {path: 'gallery', component:  GalleryComponent},
 {path: 'contact', component:  ContactComponent},
 {path: 'login', component: LoginComponent},
-{path: 'registro', component: RegisterComponent},
+// {path: 'registro', component: RegisterComponent},
 {path: 'verification-email', component: SendEmailComponent, },
 
 

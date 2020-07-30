@@ -52,7 +52,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
 
     BrowserModule,

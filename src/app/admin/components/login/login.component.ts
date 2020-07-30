@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
 
   private checkUserIsVerified(user: User) {
     if (user && user.emailVerified) {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/escritorio/new/images']);
     } else if (user) {
       this.router.navigate(['/verification-email']);
     } else {

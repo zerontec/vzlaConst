@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import {User} from '../../models/user.interface';
+import {User} from '../../../shared/models/user.interface'
 import { Observable } from 'rxjs';
 import {AuthService} from '../../../auth/service/auth.service';
 import { Router } from '@angular/router';
@@ -22,7 +21,7 @@ export class ProjectComponent implements OnInit {
   async onLogout() {
     try {
       await this.authS.logout();
-      this.router.navigate(['/login']);
+      this.routers.navigate(['/home']);
     } catch (error) {
       console.log(error);
     }

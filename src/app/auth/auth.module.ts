@@ -9,7 +9,8 @@ import { SendEmailComponent } from './send-email/send-email.component';
 
 
 @NgModule({
-  declarations: [RegisterComponent, LoginComponent,SendEmailComponent],
+  declarations: [RegisterComponent, LoginComponent,
+    SendEmailComponent],
   imports: [
     CommonModule
   ],
