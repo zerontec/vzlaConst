@@ -42,6 +42,9 @@ export class ProjectService {
         ) 
       );
   }
+
+
+
   public getOneProject(id: IProject): Observable<IProject> {
     return this.afs.doc<IProject>(`project/${id}`).valueChanges();
   }

@@ -7,6 +7,7 @@ import { GalleryComponent } from './core/components/gallery/gallery.component';
 import { LoginComponent } from './admin/components/login/login.component';
 // import { RegisterComponent } from './admin/components/register/register.component';
 import { SendEmailComponent } from './auth/send-email/send-email.component';
+import { ProjectDetailComponent } from './core/components/project-detail/project-detail.component';
 
 const appRoutes: Routes = [
 
@@ -19,8 +20,9 @@ const appRoutes: Routes = [
 {path: 'gallery', component:  GalleryComponent},
 {path: 'contact', component:  ContactComponent},
 {path: 'login', component: LoginComponent},
+{path: 'project-detail/:id', component: ProjectDetailComponent},
 // {path: 'registro', component: RegisterComponent},
-{path: 'verification-email', component: SendEmailComponent, },
+{path: 'verification-email', component: SendEmailComponent, }
 
 
 

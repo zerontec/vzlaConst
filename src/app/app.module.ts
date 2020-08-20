@@ -37,15 +37,16 @@ import { environment } from '../environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 
-
-
+import { FbLikeComponent } from './shared/components/fb-like/fb-like.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FbLikeComponent
   ],
   imports: [
     VgCoreModule,
@@ -54,6 +55,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     VgBufferingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    JwSocialButtonsModule,
+
 
     BrowserModule,
     BrowserAnimationsModule,
@@ -73,7 +76,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AngularFirestore],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ]
 })
 
 

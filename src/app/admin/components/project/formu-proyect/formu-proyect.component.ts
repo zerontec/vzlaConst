@@ -20,7 +20,7 @@ export class FormuProyectComponent implements OnInit {
     titleProject: new FormControl('', [Validators.required, Validators.minLength(6)]),
     clienteProject : new FormControl('', Validators.required),
     descripcionProject: new FormControl('', Validators.required),
-   imageProject: new FormControl('', Validators.required),
+     imageProject: new FormControl('', Validators.required),
   });
 
 

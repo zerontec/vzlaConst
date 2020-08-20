@@ -17,13 +17,13 @@ import { WhatReceiveComponent } from './components/what-receive/what-receive.com
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireStorage } from '@angular/fire/storage';
 
+
 @NgModule({
   declarations: [FooterComponent,
     HeaderComponent,
     TranslatePipe,
     PopOverComponent,
     WhatReceiveComponent,
-    
   ],
   imports: [
     CommonModule,
